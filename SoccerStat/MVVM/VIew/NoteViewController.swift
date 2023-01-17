@@ -1,8 +1,8 @@
 //
 //  NoteViewController.swift
-//  NinjaIceHockey
+//  SoccerStat
 //
-//  Created by Александр on 25.11.2022.
+//  Created by Aleksandr Gordeev on 25.11.2022.
 //
 
 import UIKit
@@ -93,10 +93,21 @@ final class NoteViewController: UIViewController {
         }
     }
     
-    public var viewModel: NoteViewModel? { didSet { bindViewModel() } }
+    public var viewModel: NoteViewModel? {
+        didSet {
+            bindViewModel()
+        }
+    }
+    
     public var delegate: NoteViewControllerDelegate?
     
-    private func bindViewModel() {
+    override func viewWillAppear(_ animated: Bool) {
+        viewModel?.fetchData()
+    }
+}
+
+private extension NoteViewController {
+    func bindViewModel() {
         viewModel?.noteSubject.bind(onNext: { [weak self] note in
             self?.titleTextEdit.text = note.title
             self?.contentTextView.text = note.content
@@ -104,13 +115,8 @@ final class NoteViewController: UIViewController {
         .disposed(by: disposeBag)
     }
     
-    private func saveNote() {
+    func saveNote() {
         viewModel?.saveNote(title: titleTextEdit.text ?? "", content: contentTextView.text)
         delegate?.saveNoteDidPress()
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        viewModel?.fetchData()
-    }
 }
-
