@@ -1,18 +1,20 @@
 //
 //  Match.swift
-//  NinjaIceHockey
+//  SoccerStat
 //
-//  Created by Александр on 23.11.2022.
+//  Created by Aleksandr Gordeev on 23.11.2022.
 //
 
-import UIKit
+import Foundation
 
 struct Match {
     let id: UInt
     let team1: Team
     let team2: Team
     let date: String
-    
+}
+
+extension Match {
     static func mock() -> Match {
         Match(
             id: 1,

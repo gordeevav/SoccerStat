@@ -1,8 +1,8 @@
 //
 //  League.swift
-//  NinjaIceHockey
+//  SoccerStat
 //
-//  Created by Александр on 23.11.2022.
+//  Created by Aleksandr Gordeev on 23.11.2022.
 //
 
 import UIKit
@@ -13,9 +13,10 @@ struct League {
     
     let name: String
     let logo: UIImage?
-    
-    
-    static func mock() -> League {        
+}
+
+extension League {
+    static func mock() -> League {
         League(tournamentId: 10, seasonId: 20, name: "League Mock", logo: nil)
     }
 }

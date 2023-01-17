@@ -1,11 +1,11 @@
 //
 //  Player.swift
-//  NinjaIceHockey
+//  SoccerStat
 //
-//  Created by Александр on 23.11.2022.
+//  Created by Aleksandr Gordeev on 23.11.2022.
 //
 
-import UIKit
+import Foundation
 
 struct Player {
     let id: UInt
@@ -17,7 +17,9 @@ struct Player {
     let height: String
     
     let team: Team
-    
+}
+
+extension Player {
     static func mock() -> Player {
         Player(id: 839956, name: "Jack Smith", country: "USA", age: "21", position: "Defender", birthday: "1990/12/01", height: "120/14", team: Team.mock())
     }
