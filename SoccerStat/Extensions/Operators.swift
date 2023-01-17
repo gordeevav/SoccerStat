@@ -1,8 +1,8 @@
 //
 //  Operators.swift
-//  NinjaIceHockey
+//  SoccerStat
 //
-//  Created by Александр on 25.11.2022.
+//  Created by Aleksandr Gordeev on 25.11.2022.
 //
 
 import Foundation
