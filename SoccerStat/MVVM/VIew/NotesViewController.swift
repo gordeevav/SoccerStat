@@ -1,15 +1,15 @@
 //
 //  NotesViewController.swift
-//  NinjaIceHockey
+//  SoccerStat
 //
-//  Created by Александр on 25.11.2022.
+//  Created by Aleksandr Gordeev on 25.11.2022.
 //
 
 import UIKit
 import RxSwift
 import RxCocoa
-import SnapKit
 import RxDataSources
+import SnapKit
 
 protocol NotesViewControllerDelegate {
     func createNote()
@@ -23,6 +23,8 @@ final class NotesViewController: UIViewController {
     private let tableViewDelegate = SimpleTableViewDelegate(height: 70)
     private let disposeBag = DisposeBag()
     
+    public var delegate: NotesViewControllerDelegate?
+    
     private lazy var tableView = UITableView() .. { 
         view.addSubview($0)
         
@@ -35,13 +37,13 @@ final class NotesViewController: UIViewController {
         
         $0.rx.setDelegate(tableViewDelegate)
             .disposed(by: disposeBag)
-        
+
         $0.rx.modelSelected(Note.self)
             .subscribe(onNext: { [weak self] item in
                 self?.delegate?.showNote(item)
             })
             .disposed(by: disposeBag)
-        
+
         $0.rx.itemDeleted
             .subscribe { [weak self] indexPath in
                 self?.viewModel?.deleteNote(index: indexPath.row)
@@ -79,23 +81,11 @@ final class NotesViewController: UIViewController {
         }
     }
     
-    private let dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String, Note>>(
-        configureCell: { _, tableView, indexPath, item in
-            guard let cell = tableView.dequeueReusableCell(
-                withIdentifier: NotesTableViewCell.cellId,
-                for: indexPath
-            ) as? NotesTableViewCell
-            else { return UITableViewCell() }
-            
-            cell.configure(with: item)
-            
-            return cell
-        },
-        canEditRowAtIndexPath: { _, _ in true }
-    )
-    
-    public var viewModel: NotesViewModel? { didSet { bindViewModel() } }
-    public var delegate: NotesViewControllerDelegate?
+    public var viewModel: NotesViewModel? {
+        didSet {
+            bindViewModel()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -112,23 +102,19 @@ final class NotesViewController: UIViewController {
         super.viewWillAppear(animated)
         fetchData()
     }
-    
-    private func bindViewModel() {
-//        viewModel?.items.bind(
-//            to: tableView.rx.items(
-//                cellIdentifier: NotesTableViewCell.cellId,
-//                cellType: NotesTableViewCell.self
-//            )
-//        ) { (row, item, cell) in cell.configure(with: item) }
-//        .disposed(by: disposeBag)
+}
+
+private extension NotesViewController {
+    func bindViewModel() {
+        guard let viewModel = viewModel else { return }
         
-        viewModel?.items
-            .bind(to: tableView.rx.items(dataSource: dataSource))
+        viewModel.items
+            .bind(to: tableView.rx.items(dataSource: viewModel.dataSource))
             .disposed(by: disposeBag)
     }
     
     @objc
-    private func fetchData() {
+    func fetchData() {
         viewModel?.fetchData()
     }
 }
