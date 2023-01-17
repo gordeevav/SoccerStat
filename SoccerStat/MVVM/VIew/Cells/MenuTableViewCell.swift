@@ -1,14 +1,14 @@
 //
 //  MenuTableViewCell.swift
-//  NinjaIceHockey
+//  SoccerStat
 //
-//  Created by Александр on 22.11.2022.
+//  Created by Aleksandr Gordeev on 22.11.2022.
 //
 
 import UIKit
 import SnapKit
 
-class MenuTableViewCell: UITableViewCell {
+final class MenuTableViewCell: UITableViewCell {
 
     private lazy var titleLabel = UILabel() .. {
         addSubview($0)
