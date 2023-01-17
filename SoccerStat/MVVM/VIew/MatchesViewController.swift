@@ -1,13 +1,14 @@
 //
 //  MatchesViewController.swift
-//  NinjaIceHockey
+//  SoccerStat
 //
-//  Created by Александр on 22.11.2022.
+//  Created by Aleksandr Gordeev on 22.11.2022.
 //
 
 import UIKit
 import RxCocoa
 import RxSwift
+import SnapKit
 
 protocol MatchesViewControllerDelegate {
     func showMatchHistory(for match: Match)
@@ -15,14 +16,36 @@ protocol MatchesViewControllerDelegate {
 
 final class MatchesViewController: UIViewController {
 
-    private var tableView = UITableView()
     private let disposeBag = DisposeBag()
     private var matchObservable = PublishSubject<Match>()
     
+    private let tableViewDelegate = SimpleTableViewDelegate(height: 130)
+    
+    private lazy var tableView = UITableView() .. {
+        view.addSubview($0)
+        
+        $0.separatorColor = .clear
+        $0.showsHorizontalScrollIndicator = false
+        $0.showsVerticalScrollIndicator = false
+        $0.allowsSelection = false
+        
+        $0.snp.makeConstraints { make in
+            make.top.equalTo(view)
+            make.bottom.equalTo(view)
+            make.left.equalTo(view).offset(10)
+            make.right.equalTo(view).offset(-10)
+        }
+        
+        $0.register(
+            MatchesCellView.self,
+            forCellReuseIdentifier: MatchesCellView.cellId
+        )
+        
+        $0.rx.setDelegate(tableViewDelegate).disposed(by: disposeBag)
+    }
+    
     public var viewModel = MatchesViewModel()
     public var delegate: MatchesViewControllerDelegate?
-    
-    private let tableViewDelegate = SimpleTableViewDelegate(height: 190)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +62,6 @@ private extension MatchesViewController {
     
     func configureMe() {
         configureMatchObservable()
-        configureTableview()
         
         bindViewModel()
     }
@@ -49,31 +71,6 @@ private extension MatchesViewController {
             self?.delegate?.showMatchHistory(for: match)
         })
         .disposed(by: disposeBag)
-    }
-    
-    func configureTableview() {
-        view.addSubview(tableView)
-        
-        tableView.register(
-            MatchesCellView.self,
-            forCellReuseIdentifier: MatchesCellView.cellId
-        )
-        
-        tableView.separatorColor = .clear
-        tableView.showsHorizontalScrollIndicator = false
-        tableView.showsVerticalScrollIndicator = false
-        tableView.allowsSelection = false
-        
-        tableView.snp.makeConstraints { make in
-            make.top.equalTo(view)
-            make.bottom.equalTo(view)
-            make.left.equalTo(view).offset(10)
-            make.right.equalTo(view).offset(-10)
-        }
-        
-        tableView.rx
-            .setDelegate(tableViewDelegate)
-            .disposed(by: disposeBag)
     }
     
     func bindViewModel() {
