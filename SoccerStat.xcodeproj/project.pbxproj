@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		A8A494B9D6824516818690DE /* Pods_NinjaIceHockey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC278081BA7DAD9960E5F766 /* Pods_NinjaIceHockey.framework */; };
+		E12CAD362977080F005BC189 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12CAD352977080F005BC189 /* UIView.swift */; };
 		E13885DE29387927001B028A /* NSManagedObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13885DD29387926001B028A /* NSManagedObject+.swift */; };
 		E13885E029387F03001B028A /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13885DF29387F03001B028A /* UITableViewCell+.swift */; };
 		E13885E42938DDC2001B028A /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13885E22938DDC1001B028A /* Note.swift */; };
 		E1A7F1A12930FB2700436480 /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A7F1A02930FB2600436480 /* NoteViewModel.swift */; };
 		E1A7F1A32930FB3A00436480 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A7F1A22930FB3A00436480 /* NoteViewController.swift */; };
-		E1A7F1A52931041800436480 /* UIButton.Configuration+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A7F1A42931041700436480 /* UIButton.Configuration+.swift */; };
 		E1A7F1A82931074A00436480 /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1A7F1A62931074A00436480 /* CoreDataModel.xcdatamodeld */; };
 		E1A7F1AD29310C0800436480 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A7F1AC29310C0800436480 /* CoreDataService.swift */; };
 		E1A7F1B129320FF400436480 /* CoreDataNotesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A7F1B029320FF400436480 /* CoreDataNotesTest.swift */; };
@@ -36,11 +36,7 @@
 		E1CB31CF292FAA9F002C1ABC /* TransferTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CB31CE292FAA9F002C1ABC /* TransferTableViewCell.swift */; };
 		E1CB31D1292FAAB0002C1ABC /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CB31D0292FAAB0002C1ABC /* TransferViewController.swift */; };
 		E1CB31D3292FBBA5002C1ABC /* TransferData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CB31D2292FBBA5002C1ABC /* TransferData.swift */; };
-		E1CB31D5292FEE9D002C1ABC /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CB31D4292FEE9D002C1ABC /* CalendarViewController.swift */; };
-		E1CB31FF2930A5C4002C1ABC /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CB31FE2930A5C4002C1ABC /* CalendarView.swift */; };
 		E1CB32012930AB1D002C1ABC /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CB32002930AB1D002C1ABC /* Operators.swift */; };
-		E1CB32032930B056002C1ABC /* CalendarDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CB32022930B056002C1ABC /* CalendarDayView.swift */; };
-		E1CB32052930B4E4002C1ABC /* CalendarMonthPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CB32042930B4E4002C1ABC /* CalendarMonthPanelView.swift */; };
 		E1CB32072930C9C8002C1ABC /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CB32062930C9C7002C1ABC /* NotesViewController.swift */; };
 		E1CB32092930C9DE002C1ABC /* NotesTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CB32082930C9DD002C1ABC /* NotesTableCellView.swift */; };
 		E1CB320B2930CA17002C1ABC /* NotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CB320A2930CA17002C1ABC /* NotesViewModel.swift */; };
@@ -83,16 +79,16 @@
 		96060F64072B0479EE7C3068 /* Pods-NinjaIceHockey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NinjaIceHockey.debug.xcconfig"; path = "Target Support Files/Pods-NinjaIceHockey/Pods-NinjaIceHockey.debug.xcconfig"; sourceTree = "<group>"; };
 		AC278081BA7DAD9960E5F766 /* Pods_NinjaIceHockey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NinjaIceHockey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C30513B1E5DF4AF7DB9C18A8 /* Pods-NinjaIceHockey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NinjaIceHockey.release.xcconfig"; path = "Target Support Files/Pods-NinjaIceHockey/Pods-NinjaIceHockey.release.xcconfig"; sourceTree = "<group>"; };
+		E12CAD352977080F005BC189 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		E13885DD29387926001B028A /* NSManagedObject+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+.swift"; sourceTree = "<group>"; };
 		E13885DF29387F03001B028A /* UITableViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+.swift"; sourceTree = "<group>"; };
 		E13885E22938DDC1001B028A /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		E1A7F1A02930FB2600436480 /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
 		E1A7F1A22930FB3A00436480 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
-		E1A7F1A42931041700436480 /* UIButton.Configuration+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton.Configuration+.swift"; sourceTree = "<group>"; };
 		E1A7F1A72931074A00436480 /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
 		E1A7F1AC29310C0800436480 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		E1A7F1B029320FF400436480 /* CoreDataNotesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataNotesTest.swift; sourceTree = "<group>"; };
-		E1CB31A1292DF88F002C1ABC /* NinjaIceHockeyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NinjaIceHockeyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1CB31A1292DF88F002C1ABC /* SoccerStatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoccerStatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1CB31A3292DF88F002C1ABC /* ApiEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndpointTests.swift; sourceTree = "<group>"; };
 		E1CB31AA292E17FD002C1ABC /* ApiTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTest.swift; sourceTree = "<group>"; };
 		E1CB31AE292E5ABD002C1ABC /* MatchesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesData.swift; sourceTree = "<group>"; };
@@ -112,15 +108,11 @@
 		E1CB31CE292FAA9F002C1ABC /* TransferTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferTableViewCell.swift; sourceTree = "<group>"; };
 		E1CB31D0292FAAB0002C1ABC /* TransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
 		E1CB31D2292FBBA5002C1ABC /* TransferData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferData.swift; sourceTree = "<group>"; };
-		E1CB31D4292FEE9D002C1ABC /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
-		E1CB31FE2930A5C4002C1ABC /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		E1CB32002930AB1D002C1ABC /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
-		E1CB32022930B056002C1ABC /* CalendarDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDayView.swift; sourceTree = "<group>"; };
-		E1CB32042930B4E4002C1ABC /* CalendarMonthPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarMonthPanelView.swift; sourceTree = "<group>"; };
 		E1CB32062930C9C7002C1ABC /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		E1CB32082930C9DD002C1ABC /* NotesTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableCellView.swift; sourceTree = "<group>"; };
 		E1CB320A2930CA17002C1ABC /* NotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewModel.swift; sourceTree = "<group>"; };
-		E1E47F7A292C8FFC007A6DA4 /* NinjaIceHockey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NinjaIceHockey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1E47F7A292C8FFC007A6DA4 /* SoccerStat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoccerStat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1E47F7D292C8FFC007A6DA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1E47F7F292C8FFC007A6DA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E1E47F81292C8FFC007A6DA4 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -192,7 +184,6 @@
 				E1E47FB4292CF2A0007A6DA4 /* PlayerViewController.swift */,
 				E1E47FBD292D14E3007A6DA4 /* MatchesViewController.swift */,
 				E1CB31D0292FAAB0002C1ABC /* TransferViewController.swift */,
-				E1CB31D4292FEE9D002C1ABC /* CalendarViewController.swift */,
 				E1CB32062930C9C7002C1ABC /* NotesViewController.swift */,
 				E1A7F1A22930FB3A00436480 /* NoteViewController.swift */,
 			);
@@ -213,7 +204,7 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		E1CB31A2292DF88F002C1ABC /* NinjaIceHockeyTests */ = {
+		E1CB31A2292DF88F002C1ABC /* SoccerStatTests */ = {
 			isa = PBXGroup;
 			children = (
 				E1CB31A3292DF88F002C1ABC /* ApiEndpointTests.swift */,
@@ -221,7 +212,7 @@
 				E1CB31C6292F74D8002C1ABC /* PlayerViewModelTest.swift */,
 				E1A7F1B029320FF400436480 /* CoreDataNotesTest.swift */,
 			);
-			path = NinjaIceHockeyTests;
+			path = SoccerStatTests;
 			sourceTree = "<group>";
 		};
 		E1CB31B0292E6816002C1ABC /* Coordinator */ = {
@@ -250,27 +241,16 @@
 		E1CB31C0292E7736002C1ABC /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
-				E1CB31FD293088BF002C1ABC /* CalendarView */,
 				E1CB31C1292E7747002C1ABC /* SimpleTableViewDelegate.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
 		};
-		E1CB31FD293088BF002C1ABC /* CalendarView */ = {
-			isa = PBXGroup;
-			children = (
-				E1CB32042930B4E4002C1ABC /* CalendarMonthPanelView.swift */,
-				E1CB31FE2930A5C4002C1ABC /* CalendarView.swift */,
-				E1CB32022930B056002C1ABC /* CalendarDayView.swift */,
-			);
-			path = CalendarView;
-			sourceTree = "<group>";
-		};
 		E1E47F71292C8FFC007A6DA4 = {
 			isa = PBXGroup;
 			children = (
-				E1E47F7C292C8FFC007A6DA4 /* NinjaIceHockey */,
-				E1CB31A2292DF88F002C1ABC /* NinjaIceHockeyTests */,
+				E1E47F7C292C8FFC007A6DA4 /* SoccerStat */,
+				E1CB31A2292DF88F002C1ABC /* SoccerStatTests */,
 				E1E47F7B292C8FFC007A6DA4 /* Products */,
 				E85CDC5D137A507B272B67FC /* Pods */,
 				859592D46D2EA001C84F173D /* Frameworks */,
@@ -280,13 +260,13 @@
 		E1E47F7B292C8FFC007A6DA4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E1E47F7A292C8FFC007A6DA4 /* NinjaIceHockey.app */,
-				E1CB31A1292DF88F002C1ABC /* NinjaIceHockeyTests.xctest */,
+				E1E47F7A292C8FFC007A6DA4 /* SoccerStat.app */,
+				E1CB31A1292DF88F002C1ABC /* SoccerStatTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E1E47F7C292C8FFC007A6DA4 /* NinjaIceHockey */ = {
+		E1E47F7C292C8FFC007A6DA4 /* SoccerStat */ = {
 			isa = PBXGroup;
 			children = (
 				E1E47F92292C938E007A6DA4 /* Resources */,
@@ -296,7 +276,7 @@
 				E1CB31C0292E7736002C1ABC /* UIComponents */,
 				E1E47F93292C9394007A6DA4 /* MVVM */,
 			);
-			path = NinjaIceHockey;
+			path = SoccerStat;
 			sourceTree = "<group>";
 		};
 		E1E47F91292C937F007A6DA4 /* System Files */ = {
@@ -334,11 +314,11 @@
 			isa = PBXGroup;
 			children = (
 				E1E47F9D292CA141007A6DA4 /* UIColor+.swift */,
-				E1A7F1A42931041700436480 /* UIButton.Configuration+.swift */,
+				E12CAD352977080F005BC189 /* UIView.swift */,
 				E13885DF29387F03001B028A /* UITableViewCell+.swift */,
 				E1CB31C8292F871E002C1ABC /* DateFormatter+.swift */,
-				E1CB32002930AB1D002C1ABC /* Operators.swift */,
 				E13885DD29387926001B028A /* NSManagedObject+.swift */,
+				E1CB32002930AB1D002C1ABC /* Operators.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -400,9 +380,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E1CB31A0292DF88F002C1ABC /* NinjaIceHockeyTests */ = {
+		E1CB31A0292DF88F002C1ABC /* SoccerStatTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E1CB31A9292DF88F002C1ABC /* Build configuration list for PBXNativeTarget "NinjaIceHockeyTests" */;
+			buildConfigurationList = E1CB31A9292DF88F002C1ABC /* Build configuration list for PBXNativeTarget "SoccerStatTests" */;
 			buildPhases = (
 				E1CB319D292DF88F002C1ABC /* Sources */,
 				E1CB319E292DF88F002C1ABC /* Frameworks */,
@@ -413,14 +393,14 @@
 			dependencies = (
 				E1CB31A6292DF88F002C1ABC /* PBXTargetDependency */,
 			);
-			name = NinjaIceHockeyTests;
+			name = SoccerStatTests;
 			productName = NinjaIceHockeyTests;
-			productReference = E1CB31A1292DF88F002C1ABC /* NinjaIceHockeyTests.xctest */;
+			productReference = E1CB31A1292DF88F002C1ABC /* SoccerStatTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E1E47F79292C8FFC007A6DA4 /* NinjaIceHockey */ = {
+		E1E47F79292C8FFC007A6DA4 /* SoccerStat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E1E47F8E292C9006007A6DA4 /* Build configuration list for PBXNativeTarget "NinjaIceHockey" */;
+			buildConfigurationList = E1E47F8E292C9006007A6DA4 /* Build configuration list for PBXNativeTarget "SoccerStat" */;
 			buildPhases = (
 				D590A488E268883A1B4B04AF /* [CP] Check Pods Manifest.lock */,
 				E1E47F76292C8FFC007A6DA4 /* Sources */,
@@ -432,9 +412,9 @@
 			);
 			dependencies = (
 			);
-			name = NinjaIceHockey;
+			name = SoccerStat;
 			productName = NinjaIceHockey;
-			productReference = E1E47F7A292C8FFC007A6DA4 /* NinjaIceHockey.app */;
+			productReference = E1E47F7A292C8FFC007A6DA4 /* SoccerStat.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -456,7 +436,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E1E47F75292C8FFC007A6DA4 /* Build configuration list for PBXProject "NinjaIceHockey" */;
+			buildConfigurationList = E1E47F75292C8FFC007A6DA4 /* Build configuration list for PBXProject "SoccerStat" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -469,8 +449,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E1E47F79292C8FFC007A6DA4 /* NinjaIceHockey */,
-				E1CB31A0292DF88F002C1ABC /* NinjaIceHockeyTests */,
+				E1E47F79292C8FFC007A6DA4 /* SoccerStat */,
+				E1CB31A0292DF88F002C1ABC /* SoccerStatTests */,
 			);
 		};
 /* End PBXProject section */
@@ -555,19 +535,17 @@
 				E1CB31C9292F871E002C1ABC /* DateFormatter+.swift in Sources */,
 				E1A7F1A82931074A00436480 /* CoreDataModel.xcdatamodeld in Sources */,
 				E1CB32012930AB1D002C1ABC /* Operators.swift in Sources */,
+				E12CAD362977080F005BC189 /* UIView.swift in Sources */,
 				E1E47FC4292D2617007A6DA4 /* ApiEndpoint.swift in Sources */,
 				E1CB32072930C9C8002C1ABC /* NotesViewController.swift in Sources */,
 				E1CB31B4292E6F4C002C1ABC /* MainCoordinator.swift in Sources */,
 				E1CB31AF292E5ABD002C1ABC /* MatchesData.swift in Sources */,
 				E1E47F82292C8FFC007A6DA4 /* MenuViewController.swift in Sources */,
-				E1CB32052930B4E4002C1ABC /* CalendarMonthPanelView.swift in Sources */,
 				E1CB31CF292FAA9F002C1ABC /* TransferTableViewCell.swift in Sources */,
 				E1CB31BD292E725B002C1ABC /* Player.swift in Sources */,
 				E1E47F9E292CA141007A6DA4 /* UIColor+.swift in Sources */,
-				E1A7F1A52931041800436480 /* UIButton.Configuration+.swift in Sources */,
 				E1CB31CB292FA933002C1ABC /* Transfer.swift in Sources */,
 				E1E47FBB292D14D0007A6DA4 /* MatchesViewModel.swift in Sources */,
-				E1CB31D5292FEE9D002C1ABC /* CalendarViewController.swift in Sources */,
 				E1CB31B9292E7237002C1ABC /* League.swift in Sources */,
 				E1CB32092930C9DE002C1ABC /* NotesTableCellView.swift in Sources */,
 				E1E47F7E292C8FFC007A6DA4 /* AppDelegate.swift in Sources */,
@@ -587,14 +565,12 @@
 				E1CB31B7292E721D002C1ABC /* Page.swift in Sources */,
 				E1E47FC9292D611A007A6DA4 /* SofaScoreApi.swift in Sources */,
 				E1E47FC0292D14F0007A6DA4 /* MatchesCellView.swift in Sources */,
-				E1CB32032930B056002C1ABC /* CalendarDayView.swift in Sources */,
 				E1CB31BB292E7249002C1ABC /* Team.swift in Sources */,
 				E1E47FC7292D3123007A6DA4 /* TeamsData.swift in Sources */,
 				E1E47FA3292CB1AA007A6DA4 /* LeagueViewModel.swift in Sources */,
 				E1CB31B2292E6824002C1ABC /* Coordinator.swift in Sources */,
 				E1A7F1AD29310C0800436480 /* CoreDataService.swift in Sources */,
 				E1CB31CD292FAA89002C1ABC /* TransferViewModel.swift in Sources */,
-				E1CB31FF2930A5C4002C1ABC /* CalendarView.swift in Sources */,
 				E1A7F1A32930FB3A00436480 /* NoteViewController.swift in Sources */,
 				E13885DE29387927001B028A /* NSManagedObject+.swift in Sources */,
 				E1E47F97292C9A5B007A6DA4 /* MenuViewModel.swift in Sources */,
@@ -613,7 +589,7 @@
 /* Begin PBXTargetDependency section */
 		E1CB31A6292DF88F002C1ABC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E1E47F79292C8FFC007A6DA4 /* NinjaIceHockey */;
+			target = E1E47F79292C8FFC007A6DA4 /* SoccerStat */;
 			targetProxy = E1CB31A5292DF88F002C1ABC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -790,7 +766,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q38DP85HSY;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NinjaIceHockey/Resources/Info.plist;
+				INFOPLIST_FILE = SoccerStat/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SoccerStat;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -800,7 +777,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = alex24.NinjaIceHockey;
+				PRODUCT_BUNDLE_IDENTIFIER = alex24.SoccerStat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -818,7 +795,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q38DP85HSY;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NinjaIceHockey/Resources/Info.plist;
+				INFOPLIST_FILE = SoccerStat/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SoccerStat;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -828,7 +806,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = alex24.NinjaIceHockey;
+				PRODUCT_BUNDLE_IDENTIFIER = alex24.SoccerStat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -839,7 +817,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E1CB31A9292DF88F002C1ABC /* Build configuration list for PBXNativeTarget "NinjaIceHockeyTests" */ = {
+		E1CB31A9292DF88F002C1ABC /* Build configuration list for PBXNativeTarget "SoccerStatTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E1CB31A7292DF88F002C1ABC /* Debug */,
@@ -848,7 +826,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E1E47F75292C8FFC007A6DA4 /* Build configuration list for PBXProject "NinjaIceHockey" */ = {
+		E1E47F75292C8FFC007A6DA4 /* Build configuration list for PBXProject "SoccerStat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E1E47F8C292C9006007A6DA4 /* Debug */,
@@ -857,7 +835,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E1E47F8E292C9006007A6DA4 /* Build configuration list for PBXNativeTarget "NinjaIceHockey" */ = {
+		E1E47F8E292C9006007A6DA4 /* Build configuration list for PBXNativeTarget "SoccerStat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E1E47F8F292C9006007A6DA4 /* Debug */,

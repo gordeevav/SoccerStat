@@ -1,12 +1,12 @@
 //
 //  ApiTest.swift
-//  NinjaIceHockeyTests
+//  SoccerStatTests
 //
-//  Created by Александр on 23.11.2022.
+//  Created by Aleksandr Gordeev on 23.11.2022.
 //
 
 import XCTest
-@testable import NinjaIceHockey
+@testable import SoccerStat
 
 
 class ApiTest: XCTestCase {

@@ -1,12 +1,12 @@
 //
 //  CoreDataNotesTest.swift
-//  NinjaIceHockeyTests
+//  SoccerStatTests
 //
-//  Created by Александр on 26.11.2022.
+//  Created by Aleksandr Gordeev on 26.11.2022.
 //
 
 import XCTest
-@testable import NinjaIceHockey
+@testable import SoccerStat
 
 class CoreDataNotesTest: XCTestCase {
 

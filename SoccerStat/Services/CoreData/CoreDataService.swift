@@ -1,18 +1,16 @@
 //
 //  CoreDataService.swift
-//  NinjaIceHockey
+//  SoccerStat
 //
-//  Created by Александр on 25.11.2022.
+//  Created by Aleksandr Gordeev on 25.11.2022.
 //
 
-import Foundation
-import UIKit
 import CoreData
 
 final class CoreDataService {
     
-    static let shared = CoreDataService()
-
+    private lazy var context = persistentContainer.viewContext
+    
     private lazy var persistentContainer = NSPersistentContainer(name: "CoreDataModel") .. {
         $0.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
@@ -20,8 +18,6 @@ final class CoreDataService {
             }
         })
     }
-    
-    private lazy var context = persistentContainer.viewContext
     
     private func entityDescription(forName entityName: String) -> NSEntityDescription? {
         NSEntityDescription.entity(forEntityName: entityName, in: context)
@@ -39,6 +35,7 @@ final class CoreDataService {
     }
 }
 
+// MARK: - Notes CRUD
 extension CoreDataService {
     
     public func notes() -> [Note] {
@@ -53,7 +50,6 @@ extension CoreDataService {
         else { return }
         
         let note = Note(entity: entity, insertInto: context)
-        
         note.title = title
         note.content = content
         note.createDate = .now

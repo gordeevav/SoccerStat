@@ -1,8 +1,8 @@
 //
 //  PlayerViewModelTest.swift
-//  NinjaIceHockeyTests
+//  SoccerStatTests
 //
-//  Created by Александр on 24.11.2022.
+//  Created by Aleksandr Gordeev on 24.11.2022.
 //
 
 import XCTest
