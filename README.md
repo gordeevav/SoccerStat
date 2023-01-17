@@ -36,13 +36,13 @@ All data provided by [sofascore.com](https://www.sofascore.com/) API.
 - [ ] Feedback
 
 ## Screenshots
-![Menu](/blob/main/Screenshots/Menu.png)
-![Leagues](/blob/main/Screenshots/Leagues.png)
-![Teams](/blob/main/Screenshots/Teams.png)
-![Players](/blob/main/Screenshots/Players.png)
-![Matches](/blob/main/Screenshots/Matches.png)
-![Transfers](/blob/main/Screenshots/Transfers.png)
-![Notes](/blob/main/Screenshots/Notes.png)
+![Menu](/ScreenShots/Menu.png)
+![Leagues](/ScreenShots/Leagues.png)
+![Teams](/ScreenShots/Teams.png)
+![Players](/ScreenShots/Players.png)
+![Matches](/ScreenShots/Matches.png)
+![Transfers](/ScreenShots/Transfers.png)
+![Notes](/ScreenShots/Notes.png)
 
 ## Contacts
 
