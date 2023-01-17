@@ -1,8 +1,8 @@
 //
 //  MainCoordinator.swift
-//  NinjaIceHockey
+//  SoccerStat
 //
-//  Created by Александр on 23.11.2022.
+//  Created by Aleksandr Gordeev on 23.11.2022.
 //
 
 import UIKit
@@ -11,19 +11,17 @@ final class MainCoordinator: Coordinator {
     
     private let animated = true
     
-    var children = [Coordinator]()
-    var navigationController: UINavigationController
+    public var navigationController: UINavigationController
 
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
     
-    func start() {
+    public func start() {
         showMenu()
-        //showTest()
     }
     
-    func showMenu() {
+    public func showMenu() {
         let viewController = MenuViewController()
         viewController.coordinator = self
         viewController.delegate = self
@@ -31,12 +29,9 @@ final class MainCoordinator: Coordinator {
         
         navigationController.pushViewController(viewController, animated: false)
     }
-    
-    func showTest() {
-//        showNote(NoteVM.mock())
-    }
 }
 
+// MARK: - Main Menu
 extension MainCoordinator: MenuViewControllerDelegate {
     func showPage(_ page: Page) {
         switch page {
@@ -44,14 +39,14 @@ extension MainCoordinator: MenuViewControllerDelegate {
         case .matches:      showMatches()
         case .transfer:     showTransfers()
         case .notes:        showNotes()
-        case .calendar:     showCalendar()
-        case .news:         print(page)
-        case .favourites:   print(page)
-        case .shop:         print(page)
-        case .bet:          print(page)
-        case .myBet:        print(page)
-        case .interactive:  print(page)
-        case .feedback:     print(page)
+        case .calendar:     return
+        case .news:         return
+        case .favourites:   return
+        case .shop:         return
+        case .bet:          return
+        case .myBet:        return
+        case .interactive:  return
+        case .feedback:     return
         }
     }
     
@@ -81,13 +76,6 @@ extension MainCoordinator: MenuViewControllerDelegate {
         navigationController.pushViewController(viewController, animated: animated)
     }
     
-    func showCalendar() {
-        let viewController = CalendarViewController()
-        viewController.title = "Calendar"
-        
-        navigationController.pushViewController(viewController, animated: animated)
-    }
-    
     func showNotes() {
         let viewController = NotesViewController()
         viewController.title = "Notes"
@@ -98,8 +86,9 @@ extension MainCoordinator: MenuViewControllerDelegate {
     }
 }
 
+// MARK: - Lague
 extension MainCoordinator: LeagueViewControllerDelegate {
-    func showLeagueTeams(_ league: League) {
+    func showTeams(league: League) {
         let viewController = TeamViewController()
         viewController.viewModel = TeamViewModel(league: league)
         viewController.delegate = self
@@ -109,23 +98,25 @@ extension MainCoordinator: LeagueViewControllerDelegate {
     }
 }
 
+// MARK: - Team
 extension MainCoordinator: TeamViewControllerDelegate {
-    func showTeamPlayers(_ team: Team) {
+    func showPlayers(team: Team) {
         let viewController = PlayerViewController()
         viewController.viewModel = PlayerViewModel(team: team)
         viewController.title = "Players"
-//        viewController.delegate = self
                 
         navigationController.pushViewController(viewController, animated: animated)
     }
 }
 
+// MARK: - Matches
 extension MainCoordinator: MatchesViewControllerDelegate {
     func showMatchHistory(for match: Match) {
         print("showMatchHistory", match)
     }
 }
 
+// MARK: - Notes
 extension MainCoordinator: NotesViewControllerDelegate {
     func createNote() {
         let viewController = NoteViewController()
@@ -146,6 +137,7 @@ extension MainCoordinator: NotesViewControllerDelegate {
     }
 }
 
+// MARK: - Note
 extension MainCoordinator: NoteViewControllerDelegate {
     func saveNoteDidPress() {
         navigationController.popViewController(animated: animated)
