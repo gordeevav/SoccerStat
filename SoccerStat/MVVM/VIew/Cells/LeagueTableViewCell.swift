@@ -1,11 +1,12 @@
 //
 //  LeagueTableViewCell.swift
-//  NinjaIceHockey
+//  SoccerStat
 //
-//  Created by Александр on 22.11.2022.
+//  Created by Aleksandr Gordeev on 22.11.2022.
 //
 
 import UIKit
+import SnapKit
 
 final class LeagueTableViewCell: UITableViewCell {
 
@@ -28,6 +29,7 @@ final class LeagueTableViewCell: UITableViewCell {
     
     private lazy var iconImageView = UIImageView() .. {
         addSubview($0)
+        $0.contentMode = .scaleAspectFit
         
         $0.snp.makeConstraints { make in
             make.left.equalTo(indexNumberLabel.snp.right).offset(10)
@@ -36,6 +38,7 @@ final class LeagueTableViewCell: UITableViewCell {
             make.width.equalTo(30)
         }
     }
+    
     private lazy var titleLabel = UILabel() .. {
         addSubview($0)
         
