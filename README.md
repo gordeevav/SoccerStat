@@ -37,6 +37,7 @@ All data provided by [sofascore.com](https://www.sofascore.com/) API.
 
 ## Screenshots
 
+<div>
 <img src="/ScreenShots/Menu.png" alt="Menu" width="200"/>
 <img src="/ScreenShots/Leagues.png" alt="Leagues" width="200"/>
 <img src="/ScreenShots/Teams.png" alt="Teams" width="200"/>
@@ -44,6 +45,7 @@ All data provided by [sofascore.com](https://www.sofascore.com/) API.
 <img src="/ScreenShots/Matches.png" alt="Matches" width="200"/>
 <img src="/ScreenShots/Transfers.png" alt="Transfers" width="200"/>
 <img src="/ScreenShots/Notes.png" alt="Notes" width="200"/>
+</div>
 
 ## Contacts
 
