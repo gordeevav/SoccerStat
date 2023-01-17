@@ -1,11 +1,10 @@
 //
 //  TransferViewModel.swift
-//  NinjaIceHockey
+//  SoccerStat
 //
-//  Created by Александр on 24.11.2022.
+//  Created by Aleksandr Gordeev on 24.11.2022.
 //
 
-import Foundation
 import RxSwift
 
 final class TransferViewModel {
@@ -24,19 +23,6 @@ final class TransferViewModel {
             }
             .bind(to: items)
             .disposed(by: disposeBag)
-        
-//        let res = [
-//            Transfer.mock(),
-//            Transfer.mock(),
-//            Transfer.mock(),
-//            Transfer.mock(),
-//            Transfer.mock(),
-//            Transfer.mock(),
-//            Transfer.mock(),
-//            Transfer.mock(),
-//        ]
-//
-//        items.onNext(res)
     }
     
     private func getTransferArray(from transfersData: TransfersData) -> [Transfer]? {

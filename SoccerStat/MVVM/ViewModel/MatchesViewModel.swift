@@ -1,11 +1,10 @@
 //
 //  MatchesViewModel.swift
-//  NinjaIceHockey
+//  SoccerStat
 //
-//  Created by Александр on 22.11.2022.
+//  Created by Aleksandr Gordeev on 22.11.2022.
 //
 
-import Foundation
 import RxSwift
 
 final class MatchesViewModel {
