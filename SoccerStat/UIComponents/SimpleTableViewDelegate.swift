@@ -1,15 +1,15 @@
 //
 //  TableViewDelegate.swift
-//  NinjaIceHockey
+//  SoccerStat
 //
-//  Created by Александр on 23.11.2022.
+//  Created by Aleksandr Gordeev on 23.11.2022.
 //
 
 import UIKit
 
-class SimpleTableViewDelegate: NSObject, UITableViewDelegate {
+final class SimpleTableViewDelegate: NSObject, UITableViewDelegate {
     
-    let height: CGFloat
+    private let height: CGFloat
     
     init(height: CGFloat) {
         self.height = height
@@ -18,6 +18,4 @@ class SimpleTableViewDelegate: NSObject, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return height        
     }
-    
-    
 }
