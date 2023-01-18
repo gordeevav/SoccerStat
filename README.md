@@ -49,7 +49,6 @@ All data provided by [sofascore.com](https://www.sofascore.com/) API.
 
 ## Contacts
 
-Aleksandr Gordeev
-
-| Telagram: | [@avgordeev](t.me/avgordeev) |
-| LinkedIn: | [linkedin.com/in/avgordeev](https://www.linkedin.com/in/avgordeev/) |
+- Aleksandr Gordeev
+- Telagram: [@avgordeev](t.me/avgordeev) 
+- LinkedIn: [linkedin.com/in/avgordeev](https://www.linkedin.com/in/avgordeev/)
